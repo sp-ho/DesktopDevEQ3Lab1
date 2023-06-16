@@ -27,6 +27,7 @@ namespace Lab1
         public double AccBalance { get => accBalance; set => accBalance = value; }
         public int NbOfChecks { get => nbOfChecks; set => nbOfChecks = value; }
 
+        // Method to calculate the service fees
         public double CalcServiceFees()
         {
             double monthlyFee = 10;

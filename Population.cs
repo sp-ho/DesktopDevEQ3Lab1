@@ -30,6 +30,7 @@ namespace Lab1
         public double DailyIncreasePercent { get => dailyIncreasePercent; set => dailyIncreasePercent = value; }
         public int NumberOfDays { get => numberOfDays; set => numberOfDays = value; }
 
+        // Method to calculate the daily population
         public List<int> calcDailyPopulation()
         {
             List<int> dailyPopulation = new List<int>();
@@ -38,7 +39,7 @@ namespace Lab1
             for (int i = 1; i <= numberOfDays; i++)
             {
                 currentSize *= (1 + dailyIncreasePercent / 100);
-                dailyPopulation.Add((int)currentSize);
+                dailyPopulation.Add((int)currentSize); // display daily population in text block 
             }
         
             return dailyPopulation;

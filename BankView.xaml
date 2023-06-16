@@ -9,9 +9,9 @@
     <Grid>
         <Label x:Name="lblAccBalance" Content="Account balance: " HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top" FontSize="16" Width="174"/>
         <Label x:Name="lblNbChecks" Content="Number of checks: " HorizontalAlignment="Left" Margin="37,122,0,0" VerticalAlignment="Top" FontSize="16" Width="199"/>
-        <TextBox x:Name="tbNbChecks" HorizontalAlignment="Left" Margin="203,126,0,0" TextWrapping="Wrap" Text="Insert Number of checks" VerticalAlignment="Top" Width="192" FontSize="16"/>
+        <TextBox x:Name="tbNbChecks" HorizontalAlignment="Left" Margin="203,126,0,0" TextWrapping="Wrap" Text="Insert Number of checks" VerticalAlignment="Top" Width="192" FontSize="16" GotFocus="tbNbChecks_GotFocus"/>
         <Button x:Name="btnCalcFees" Content="Calculate Fees" HorizontalAlignment="Left" Margin="203,168,0,0" VerticalAlignment="Top" FontSize="16" Width="192" Click="btnCalcFees_Click" />
-        <TextBox x:Name="tbAccBalance" HorizontalAlignment="Left" Margin="203,90,0,0" TextWrapping="Wrap" Text="Insert account balance" VerticalAlignment="Top" Width="192" FontSize="16"/>
+        <TextBox x:Name="tbAccBalance" HorizontalAlignment="Left" Margin="203,90,0,0" TextWrapping="Wrap" Text="Insert account balance" VerticalAlignment="Top" Width="192" FontSize="16" GotFocus="tbAccBalance_GotFocus"/>
         <Label x:Name="lblTotalFeesResult" Content="Result" HorizontalAlignment="Left" Margin="37,216,0,0" VerticalAlignment="Top" FontSize="16" Width="358" FontWeight="Bold" Background="#FFE4F5F5" BorderBrush="#FF080808"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="345,257,0,0" VerticalAlignment="Top" FontSize="16" Click="btnClear_Click" Height="31" Width="49"/>
         <Label Content="BANK SERVICE CHARGE" HorizontalAlignment="Left" Margin="37,31,0,0" VerticalAlignment="Top" FontSize="20" Width="284" FontWeight="Bold"/>

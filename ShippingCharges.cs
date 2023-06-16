@@ -26,6 +26,7 @@ namespace Lab1
         public double Weight { get => weight; set => weight = value; }
         public double Distance { get => distance; set => distance = value; }
 
+        // Method to calculate the shipping charge
         public double CalcShippingCharge(double weight, double distance)
         {
             double shippingRate = 0;

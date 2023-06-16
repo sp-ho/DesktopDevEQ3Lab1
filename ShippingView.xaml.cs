@@ -27,6 +27,7 @@ namespace Lab1
             shippingCharges = new ShippingCharges();
         }
 
+        // When the Home button is clicked, return to Main Window
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
             MainWindow home = Application.Current.MainWindow as MainWindow;
@@ -41,6 +42,7 @@ namespace Lab1
             home.Show();
         }
 
+        // When the Clear button is clicked, clear the text boxes and result label
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             tbWeight.Clear();
@@ -49,9 +51,10 @@ namespace Lab1
             lblTotalFeesResult.Content = "";
         }
 
+        // When the Calculate button is clicked, call the CalcShippingCharge method
         private void btnCalc_Click(object sender, RoutedEventArgs e)
         {
-            // Get values from text boxes for BankCharges instance variables
+            // Get values from text boxes for ShippingCharges instance variables
             double weight = Convert.ToDouble(tbWeight.Text);
             double distance = Convert.ToDouble(tbDistance.Text);
 
@@ -59,11 +62,23 @@ namespace Lab1
             shippingCharges.Weight = weight;
             shippingCharges.Distance = distance;
 
-            // Calculate the total fees
+            // Calculate the total shipping charges
             double totalShippingCharges = shippingCharges.CalcShippingCharge(weight, distance);
 
             // Display the calculation result at the label
             lblTotalFeesResult.Content = "Total charge for shipping: " + totalShippingCharges.ToString("0.00") + "$";
+        }
+
+        // Clear the weight text box when it is clicked
+        private void tbWeight_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbWeight.Text = string.Empty;
+        }
+
+        // Clear the distance text box when it is clicked
+        private void tbDistance_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbDistance.Text = string.Empty;
         }
     }
 }

@@ -27,6 +27,7 @@ namespace Lab1
             population = new Population();
         }
 
+        // When Home button is clicked, return to Main Window
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
             MainWindow home = Application.Current.MainWindow as MainWindow;
@@ -36,11 +37,11 @@ namespace Lab1
                 home = new MainWindow();
                 Application.Current.MainWindow = home;
             }
-
             home.Activate();
             home.Show();
         }
 
+        // When the Clear button is clicked, clear the text boxes and result label
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             tbStart.Clear();
@@ -50,8 +51,10 @@ namespace Lab1
             tBlockDailyPopulation.Text = "";
         }
 
+        // When the Calculate button is clicked, call the calcDailyPopulation method
         private void btnCalc_Click(object sender, RoutedEventArgs e)
         {
+            // Get values from text boxes for Population instance variables
             int startPopulation = Convert.ToInt32(tbStart.Text);
             double dailyIncreasePercent = Convert.ToDouble(tbDailyIncrease.Text);
             int numberOfDays = Convert.ToInt32(tbNumDays.Text);
@@ -77,13 +80,34 @@ namespace Lab1
                 return;
             }
 
+            // Set values for Population instance
             population.StartingSize = startPopulation;
             population.NumberOfDays = numberOfDays;
             population.DailyIncreasePercent = dailyIncreasePercent;
 
+            // Create a list of integer data type to store the result of calculation
             List<int> dailyPopulations = population.calcDailyPopulation();
 
+            // Display the population of each day in the text block
             tBlockDailyPopulation.Text = string.Join(", ", dailyPopulations);
+        }
+
+        // Clear the starting size of population text box when it is clicked
+        private void tbStart_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbStart.Text = string.Empty;
+        }
+
+        // Clear the daily increase percent text box when it is clicked
+        private void tbDailyIncrease_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbDailyIncrease.Text = string.Empty;
+        }
+
+        // Clear the number of days text box when it is clicked
+        private void tbNumDays_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbNumDays.Text = string.Empty;
         }
     }
 }

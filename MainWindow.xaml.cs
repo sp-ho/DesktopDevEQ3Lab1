@@ -26,18 +26,21 @@ namespace Lab1
             InitializeComponent();
         }
 
+        // When the Bank Charges button is clicked
         private void btnBank_Click(object sender, RoutedEventArgs e)
         {
             BankView bank = new BankView();
             bank.Show();
         }
 
+        // When the Fast Freight Shipping button is clicked
         private void btnShipping_Click(object sender, RoutedEventArgs e)
         {
             ShippingView shipping = new ShippingView();
             shipping.Show();
         }
 
+        // When the Population of Organisms button is clicked
         private void btnPopulation_Click(object sender, RoutedEventArgs e)
         {
             PopulationView population = new PopulationView();

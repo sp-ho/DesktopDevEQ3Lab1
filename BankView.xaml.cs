@@ -26,7 +26,8 @@ namespace Lab1
             InitializeComponent();
             bankCharges = new BankCharges();
         }
-
+        
+        // When Calculate button is clicked, call the CalcServiceFees method in BankCharge class
         private void btnCalcFees_Click(object sender, RoutedEventArgs e)
         {
             // Get values from text boxes for BankCharges instance variables
@@ -44,6 +45,7 @@ namespace Lab1
             lblTotalFeesResult.Content = "Total fees of this month: " + totalFees.ToString("0.00") + "$";
         }
 
+        // When the Clear button is clicked, clear the text boxes and result label
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             tbAccBalance.Clear();
@@ -52,6 +54,7 @@ namespace Lab1
             lblTotalFeesResult.Content = "";
         }
 
+        // When the Home button is clicked, return to Main Window
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
             MainWindow home = Application.Current.MainWindow as MainWindow;
@@ -64,6 +67,18 @@ namespace Lab1
 
             home.Activate();
             home.Show();
+        }
+
+        // Clear the account balance text box when it is clicked
+        private void tbAccBalance_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbAccBalance.Text = string.Empty;
+        }
+
+        // Clear the number of checks text box when it is clicked
+        private void tbNbChecks_GotFocus(object sender, RoutedEventArgs e)
+        {
+            tbNbChecks.Text = string.Empty;
         }
     }
 }
