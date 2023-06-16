@@ -37,9 +37,10 @@ namespace Lab1
                 home = new MainWindow();
                 Application.Current.MainWindow = home;
             }
-
-            home.Activate();
+            home.Activate(); // activate or return the Main Window
             home.Show();
+
+            Close(); // close current window
         }
 
         // When the Clear button is clicked, clear the text boxes and result label

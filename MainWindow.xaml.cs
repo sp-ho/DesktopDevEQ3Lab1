@@ -26,25 +26,49 @@ namespace Lab1
             InitializeComponent();
         }
 
-        // When the Bank Charges button is clicked
-        private void btnBank_Click(object sender, RoutedEventArgs e)
+        // When the Bank Charges radio button is checked, disable other radio buttons
+        private void rbBank_Checked(object sender, RoutedEventArgs e)
         {
-            BankView bank = new BankView();
-            bank.Show();
+            rbShipping.IsChecked = false;
+            rbPopulation.IsChecked = false;
         }
 
-        // When the Fast Freight Shipping button is clicked
-        private void btnShipping_Click(object sender, RoutedEventArgs e)
+        // When the Fast Freight Shipping radio button is checked, disable other radio buttons
+        private void rbShipping_Checked(object sender, RoutedEventArgs e)
         {
-            ShippingView shipping = new ShippingView();
-            shipping.Show();
+            rbBank.IsChecked = false;
+            rbPopulation.IsChecked = false;
         }
 
-        // When the Population of Organisms button is clicked
-        private void btnPopulation_Click(object sender, RoutedEventArgs e)
+        // When the Population of Organisms radio button is checked, disable other radio buttons
+        private void rbPopulation_Checked(object sender, RoutedEventArgs e)
         {
-            PopulationView population = new PopulationView();
-            population.Show();
+            rbBank.IsChecked = false;
+            rbShipping.IsChecked = false;
+        }
+
+        // Go to the window of checked radio button
+        private void btnGo_Click(object sender, RoutedEventArgs e)
+        {
+            if ((bool)rbBank.IsChecked) // if Bank Charges radio button is checked
+            {
+                BankView bank = new BankView();
+                bank.Show();
+            }
+            else if ((bool)rbShipping.IsChecked) // if Shipping Charges radio button is checked
+            {
+                ShippingView shipping = new ShippingView();
+                shipping.Show();
+            }
+            else if ((bool)(rbPopulation.IsChecked)) // if Population of Organisms radio button is checked
+            {
+                PopulationView population = new PopulationView();
+                population.Show();
+            }
+            else // if no radio button is checked
+            {
+                MessageBox.Show("Choose a radio button.");
+            }
         }
     }
 }

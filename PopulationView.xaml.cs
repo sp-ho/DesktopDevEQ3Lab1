@@ -37,8 +37,10 @@ namespace Lab1
                 home = new MainWindow();
                 Application.Current.MainWindow = home;
             }
-            home.Activate();
+            home.Activate(); // activate or return the Main Window
             home.Show();
+
+            Close(); // close current window
         }
 
         // When the Clear button is clicked, clear the text boxes and result label
@@ -85,11 +87,11 @@ namespace Lab1
             population.NumberOfDays = numberOfDays;
             population.DailyIncreasePercent = dailyIncreasePercent;
 
-            // Create a list of integer data type to store the result of calculation
+            // Create a list of integer data type to store the results of calculation
             List<int> dailyPopulations = population.calcDailyPopulation();
 
             // Display the population of each day in the text block
-            tBlockDailyPopulation.Text = string.Join(", ", dailyPopulations);
+            tBlockDailyPopulation.Text = "Population of each day: \n" + string.Join(", ", dailyPopulations);
         }
 
         // Clear the starting size of population text box when it is clicked

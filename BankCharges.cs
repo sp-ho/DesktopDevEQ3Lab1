@@ -10,8 +10,10 @@ namespace Lab1
     internal class BankCharges
     {
         // Instance variables 
-        private double accBalance;
-        private int nbOfChecks;
+        private double accBalance;      // current account balance
+        private int nbOfChecks;         // number of checks written
+        private double totalFees;       // total bank service fees
+        private double monthlyFee = 10; // fixed monthly base fee
 
         // Default constructor
         public BankCharges() { }
@@ -27,11 +29,10 @@ namespace Lab1
         public double AccBalance { get => accBalance; set => accBalance = value; }
         public int NbOfChecks { get => nbOfChecks; set => nbOfChecks = value; }
 
-        // Method to calculate the service fees
+        // Method to calculate the bank service fees
         public double CalcServiceFees()
         {
-            double monthlyFee = 10;
-            double checkFee = 0;
+            double checkFee = 0; // initialize the checkFee to zero
 
             if (nbOfChecks < 20)
             {
@@ -48,13 +49,12 @@ namespace Lab1
             else
                 checkFee = 0.1;
 
-            double totalFees = monthlyFee + (nbOfChecks * checkFee);
+            totalFees = monthlyFee + (nbOfChecks * checkFee);
 
             if (accBalance < 400)
             {
                 totalFees += 15;
             }
-
             return totalFees;
         } 
     }

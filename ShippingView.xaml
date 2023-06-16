@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="ShippingView" Height="419" Width="465">
     <Grid>
-        <Label x:Name="lblShipping" Content="Fast Freight Shipping (FFS) Company" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
-        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="248,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.618" FontSize="16" Click="btnHome_Click" Height="31" Width="63"/>
-        <Label x:Name="lblWeight" Content="Weight of Package (kg):" HorizontalAlignment="Left" Margin="62,119,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Label x:Name="lblDistance" Content="Distance (Miles):" HorizontalAlignment="Left" Margin="62,168,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="264,123,0,0" TextWrapping="Wrap" Text="Insert Weight" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbWeight_GotFocus"/>
-        <TextBox x:Name="tbDistance" HorizontalAlignment="Left" Margin="264,172,0,0" TextWrapping="Wrap" Text="Insert Distance" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbDistance_GotFocus"/>
-        <Button x:Name="btnCalc" Content="Calculate" HorizontalAlignment="Left" Margin="264,217,0,0" VerticalAlignment="Top" FontSize="16" Width="120" Click="btnCalc_Click"/>
-        <Label x:Name="lblTotalFeesResult" Content="Result" HorizontalAlignment="Left" Margin="68,271,0,0" VerticalAlignment="Top" FontSize="16" Width="316" FontWeight="Bold" Background="#FFFDC8E3" BorderBrush="#FF080808"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="333,317,0,0" VerticalAlignment="Top" FontSize="16" Click="btnClear_Click" Height="31" Width="51"/>
+        <Label x:Name="lblShipping" Content="Fast Freight Shipping" HorizontalAlignment="Left" Margin="62,47,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" Margin="321,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,0.618" FontSize="16" Click="btnHome_Click" Height="31" Width="63"/>
+        <Label x:Name="lblWeight" Content="Weight of Package (kg):" HorizontalAlignment="Left" Margin="62,115,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblDistance" Content="Distance (Miles):" HorizontalAlignment="Left" Margin="62,164,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="264,119,0,0" TextWrapping="Wrap" Text="Insert Weight" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbWeight_GotFocus"/>
+        <TextBox x:Name="tbDistance" HorizontalAlignment="Left" Margin="264,168,0,0" TextWrapping="Wrap" Text="Insert Distance" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbDistance_GotFocus"/>
+        <Button x:Name="btnCalc" Content="Calculate" HorizontalAlignment="Left" Margin="264,213,0,0" VerticalAlignment="Top" FontSize="16" Width="120" Click="btnCalc_Click"/>
+        <Label x:Name="lblTotalFeesResult" Content="Total shipping charges" HorizontalAlignment="Left" Margin="68,267,0,0" VerticalAlignment="Top" FontSize="16" Width="316" FontWeight="Bold" Background="#FFFDC8E3" BorderBrush="#FF080808"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="333,313,0,0" VerticalAlignment="Top" FontSize="16" Click="btnClear_Click" Height="31" Width="51"/>
 
     </Grid>
 </Window>

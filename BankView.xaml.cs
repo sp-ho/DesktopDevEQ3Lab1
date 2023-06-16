@@ -64,9 +64,10 @@ namespace Lab1
                 home = new MainWindow();
                 Application.Current.MainWindow = home;  
             }
-
-            home.Activate();
+            home.Activate(); // activate or return the Main Window
             home.Show();
+
+            Close(); // close current window
         }
 
         // Clear the account balance text box when it is clicked
