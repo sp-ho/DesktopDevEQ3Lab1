@@ -63,19 +63,19 @@ This XAML file represents the ShippingView window of the application. It contain
 
 ## Images of Views
 
-<img src="images/MainWindow.png" alt="image" width="300" height="200">
+<img src="images/MainWindow.png" alt="image" width="300" height="300">
 |:--:|
 *Figure 1: MainWindow*
 
-![BankView](images/BankView.png)
+<img src="images/BankView.png" alt="image" width="300" height="300">
 |:--:|
 *Figure 2: BankView window*
 
-![PopulationView](images/PopulationView.png)
+<img src="images/PopulationView.png" alt="image" width="300" height="300">
 |:--:|
 *Figure 3: PopulationView window*
 
-![ShippingView](images/ShippingView.png)
+<img src="images/ShippingView.png" alt="image" width="300" height="300">
 |:--:|
 *Figure 4: ShippingView window*
 
