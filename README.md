@@ -62,19 +62,25 @@ This XAML file represents the PopulationView window of the application. It inclu
 This XAML file represents the ShippingView window of the application. It contains elements for calculating shipping charges based on package weight and distance.
 
 ## Images of Views
-
+<figure>
 <img src="images/MainWindow.png" alt="image" width="400" height="300">
 <figcaption>Figure 1: MainWindow</figcaption>
+</figure>
 
+<figure>
 <img src="images/BankView.png" alt="image" width="400" height="300">
 <figcaption>Figure 2: BankView window</figcaption>
+</figure>
 
+<figure>
 <img src="images/PopulationView.png" alt="image" width="300" height="400">
 <figcaption>Figure 3: PopulationView window</figcaption>
+</figure>
 
+<figure>
 <img src="images/ShippingView.png" alt="image" width="300" height="300">
 <figcaption>Figure 4: ShippingView window</figcaption>
-
+</figure>
 
 
 
