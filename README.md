@@ -71,10 +71,10 @@ This XAML file represents the ShippingView window of the application. It contain
 |:--:|
 |Figure 2: BankView window|
 
-|<img src="images/PopulationView.png" alt="image" width="400" height="430">|
+|<img src="images/PopulationView.png" alt="image" width="400" height="450">|
 |:--:|
 |Figure 3: PopulationView window|
 
-|<img src="images/ShippingView.png" alt="image" width="400" height="300">|
+|<img src="images/ShippingView.png" alt="image" width="400" height="350">|
 |:--:|
 |Figure 4: ShippingView window|
