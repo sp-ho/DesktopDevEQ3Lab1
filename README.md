@@ -63,7 +63,7 @@ This XAML file represents the ShippingView window of the application. It contain
 
 ## Images of Views
 
-![MainWindow](images/MainWindow.png)
+<img src="images/MainWindow.png" alt="image" width="300" height="200">
 |:--:|
 *Figure 1: MainWindow*
 
