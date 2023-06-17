@@ -14,7 +14,7 @@
         <TextBox x:Name="tbWeight" HorizontalAlignment="Left" Margin="264,119,0,0" TextWrapping="Wrap" Text="Insert Weight" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbWeight_GotFocus"/>
         <TextBox x:Name="tbDistance" HorizontalAlignment="Left" Margin="264,168,0,0" TextWrapping="Wrap" Text="Insert Distance" VerticalAlignment="Top" Width="120" FontSize="16" GotFocus="tbDistance_GotFocus"/>
         <Button x:Name="btnCalc" Content="Calculate" HorizontalAlignment="Left" Margin="264,213,0,0" VerticalAlignment="Top" FontSize="16" Width="120" Click="btnCalc_Click"/>
-        <Label x:Name="lblTotalFeesResult" Content="Total shipping charges" HorizontalAlignment="Left" Margin="68,267,0,0" VerticalAlignment="Top" FontSize="16" Width="316" FontWeight="Bold" Background="#FFFDC8E3" BorderBrush="#FF080808"/>
+        <Label x:Name="lblTotalFeesResult" Content="Result of Calculation" HorizontalAlignment="Left" Margin="68,267,0,0" VerticalAlignment="Top" FontSize="16" Width="316" FontWeight="Bold" Background="#FFFDC8E3" BorderBrush="#FF080808"/>
         <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="333,313,0,0" VerticalAlignment="Top" FontSize="16" Click="btnClear_Click" Height="31" Width="51"/>
 
     </Grid>
