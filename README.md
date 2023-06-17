@@ -64,16 +64,16 @@ This XAML file represents the ShippingView window of the application. It contain
 ## Images of Views
 
 ![MainWindow](images/MainWindow.png)
-*Figure 1: MainWindow*
+Caption: *Figure 1: MainWindow*
 
 ![BankView](images/BankView.png)
-*Figure 2: BankView window*
+Caption: *Figure 2: BankView window*
 
 ![PopulationView](images/PopulationView.png)
-*Figure 3: PopulationView window*
+Caption: *Figure 3: PopulationView window*
 
 ![ShippingView](images/ShippingView.png)
-*Figure 4: ShippingView window*
+Caption: *Figure 4: ShippingView window*
 
 
 
