@@ -27,28 +27,28 @@ namespace Lab1
         }
 
         // When the Bank Charges radio button is checked, disable other radio buttons
-        private void rbBank_Checked(object sender, RoutedEventArgs e)
+        public void rbBank_Checked(object sender, RoutedEventArgs e)
         {
             rbShipping.IsChecked = false;
             rbPopulation.IsChecked = false;
         }
 
         // When the Fast Freight Shipping radio button is checked, disable other radio buttons
-        private void rbShipping_Checked(object sender, RoutedEventArgs e)
+        public void rbShipping_Checked(object sender, RoutedEventArgs e)
         {
             rbBank.IsChecked = false;
             rbPopulation.IsChecked = false;
         }
 
         // When the Population of Organisms radio button is checked, disable other radio buttons
-        private void rbPopulation_Checked(object sender, RoutedEventArgs e)
+        public void rbPopulation_Checked(object sender, RoutedEventArgs e)
         {
             rbBank.IsChecked = false;
             rbShipping.IsChecked = false;
         }
 
         // Go to the window of checked radio button
-        private void btnGo_Click(object sender, RoutedEventArgs e)
+        public void btnGo_Click(object sender, RoutedEventArgs e)
         {
             if ((bool)rbBank.IsChecked) // if Bank Charges radio button is checked
             {

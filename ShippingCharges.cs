@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    internal class ShippingCharges
+    public class ShippingCharges
     {
         // Instance variables
         private double weight;

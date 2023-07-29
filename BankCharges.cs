@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 // Problem 1
 namespace Lab1
 {
-    internal class BankCharges
+    public class BankCharges
     {
         // Instance variables 
         private double accBalance;      // current account balance

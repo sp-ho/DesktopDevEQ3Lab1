@@ -7,7 +7,7 @@ using System.Windows.Navigation;
 
 namespace Lab1
 {
-    internal class Population
+    public class Population
     {
         // Instance variables
         private int startingSize;
